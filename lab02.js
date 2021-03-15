@@ -2,31 +2,43 @@
 
 let named = prompt("Please enter your name");
 
-alert("Welcome Mr/Ms " +named.toUpperCase()+'\n'+" Could you share us with the survey please! by answering the following questions with yes/no");
+alert("Welcome Mr/Ms " +named.toUpperCase()+'\n'+" Let's starting the guessing game! by answering the following questions with yes/no or y/n");
 
 
-let type = prompt(" Did your prefer Online shopping?");
+let type = prompt(" Ready?!!");
+if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
+{
+  let gender= prompt("Iam a 40 years old female!");
+  if (gender.toLocaleLowerCase() === 'yes' || gender.toLocaleLowerCase() === 'y')
+  {alert("Ooh, that's not true, Iam 27years old female");}
+  else{ alert("you guessed that, Iam not ");}
+
+  let career= prompt("Iam a prof. programmer");
+  if (career.toLocaleLowerCase() === 'yes' || career.toLocaleLowerCase() === 'y')
+  {alert("unfortunutly No! Iam still a beginner and try to be that");}
+  else{ alert("you guessed that, Iam still a student ");}
+
+  let prefer= prompt("I prefer an online shopping mode");
+  if (prefer.toLocaleLowerCase() === 'yes' || prefer.toLocaleLowerCase() === 'y')
+  {alert("Oh Oh, absolutly no, because I faced a previous bad experiences, unfortunutly!!");}
+  else{ alert("exactly, I prefer the in store shopping mode");}
+
+  let colory= prompt("My favourite color is black");
+  if (colory.toLocaleLowerCase() === 'yes' || colory.toLocaleLowerCase() === 'y')
+  {alert("No, it is the pink");}
+  else{ alert("yeah, it is not my favourite one");}
 
 
-if (type.toLocaleLowerCase() === 'yes') {
-
-  prompt("Did you believe that the online shopping mode is more interesting than in store mode?");
-
-
-  prompt("Is there is any bad previous experience you had been faced with online shopping?");
-
-  prompt("Did you trust the PREPAY mode by visa cards?");
-
+  let sweets= prompt("the sweets is my lovely snack");
+  if (sweets.toLocaleLowerCase() === 'yes' || sweets.toLocaleLowerCase() === 'y')
+  {alert("yeah, I really love it");}
+  else{ alert("you didn't guess that, actually I prefer it");}
 }
-
-else
-if (type.toLocaleLowerCase() ==='no') { alert("I advise you to try intersting and time_saving experience with online shopping!"); }
+else { alert("you can try another time");}
 
 
 
-
-
-alert("very nice to share us Mr/Ms " + named + " Thank you♥");
+alert("very nice to share me Mr/Ms " + named + " Thank you♥");
 
 console.log("nexttime");
 
