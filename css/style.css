@@ -1,0 +1,20 @@
+h1 {color: coral; text-align: center;}
+
+.on{ background-color: darkseagreen;}
+
+footer{background-color: lightpink;}
+
+/*div.box{
+    height: 300px;
+    width: 300px;
+    background-color: #bbbbaa;
+}
+p{
+    width: 75%;
+    height: 75%;
+    background-color: #0088dd;
+}*/
+ol{margin-left: 10 px;}
+
+img{width: 700px;
+height: 300px;}
