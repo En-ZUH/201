@@ -111,7 +111,7 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
 
 
 let inputnum= prompt('Now could you Guess haw many flower 🌷 I have own! between 1 and 15, you wil have 4 attempts');
-for (let attempt = 4; attempt >= 1; attempt--)
+for (let attempt = 4; attempt > 1; attempt--)
 {
   if (Number(inputnum) === 7)
   {
