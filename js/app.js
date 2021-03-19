@@ -8,27 +8,31 @@ let named = prompt('Please enter your name');
 
 alert('Welcome 🤩 Mr/Ms ' +named.toUpperCase()+'\n'+' Lets starting the guessing game! by answering the following questions with yes/no or y/n');
 
-
-let type = prompt('Ready?!! 👏 ');
-if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
-{
-  let gender= prompt('Iam a 70 years old 👵 !');
-  if (gender.toLocaleLowerCase() === 'no' || gender.toLocaleLowerCase() === 'n')
+function getAge(){
+  let type = prompt('Ready?!! 👏 ');
+  if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
   {
-    console.log('your answer is '+ gender+ '\n'+ 'correct 😃 , Iam 27 years old ');
-    alert('your answer is '+ gender+ '\n'+ 'correct 😃 , Iam 27 years old ');
-    score++;
-  }
+    let gender= prompt('Iam a 70 years old 👵 !');
+    if (gender.toLocaleLowerCase() === 'no' || gender.toLocaleLowerCase() === 'n')
+    {
+      console.log('your answer is '+ gender+ '\n'+ 'correct 😃 , Iam 27 years old ');
+      alert('your answer is '+ gender+ '\n'+ 'correct 😃 , Iam 27 years old ');
+      score++;
+    }
 
-  else if (gender.toLocaleLowerCase() === 'yes' || gender.toLocaleLowerCase() === 'y')
-  {
-    console.log('your answer is '+ gender+ '\n'+ 'thats not correct, Iam not 70 ');
-    alert('your answer is '+ gender+ '\n'+ 'thats not correct, Iam not 70 ');
-    score++;
+    else if (gender.toLocaleLowerCase() === 'yes' || gender.toLocaleLowerCase() === 'y')
+    {
+      console.log('your answer is '+ gender+ '\n'+ 'thats not correct, Iam not 70 ');
+      alert('your answer is '+ gender+ '\n'+ 'thats not correct, Iam not 70 ');
+      score++;
+    }
   }
+}  
+  getAge();
 
 
   //_______________________________________________________________________________________________________________-
+function career(){
 
   let career= prompt('Iam a prof. programmer');
   if (career.toLocaleLowerCase() === 'yes' || career.toLocaleLowerCase() === 'y')
@@ -45,9 +49,11 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
     alert('your answer is '+ career+ '\n'+ 'correct.. you guessed that, Iam still a student ');
 
     score++; }
+}
+career();
 
   //_______________________________________________________________________________________________________________-
-
+function shopping(){
   let prefer= prompt('I prefer an online shopping mode');
   if (prefer.toLocaleLowerCase() === 'yes' || prefer.toLocaleLowerCase() === 'y')
   {
@@ -61,10 +67,12 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
     alert('your answer is '+ prefer+ '\n'+'correct.. exactly, I prefer the in store shopping mode');
     score++;
   }
+}
+shopping();
   //_______________________________________________________________________________________________________________-
 
-
-  let colory= prompt('My favourite color is black');
+function color(){
+   let colory= prompt('My favourite color is black');
   if (colory.toLocaleLowerCase() === 'yes' || colory.toLocaleLowerCase() === 'y')
   {
     console.log('your answer is '+ colory+ '\n'+ 'not correct.. No, it is the pink');
@@ -79,9 +87,14 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
     alert('your answer is '+ colory+ '\n'+ 'correct.. yeah, it is not my favourite one');
 
     score++; }
+}
+color();
+ 
   //_______________________________________________________________________________________________________________-
 
+function sweet(){
 
+}
   let sweets= prompt('the sweets is my lovely snack🍰🍰🍰');
 
   if (sweets.toLocaleLowerCase() === 'yes' || sweets.toLocaleLowerCase() === 'y')
@@ -109,7 +122,7 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
 //________________________________________________________________________________________________________________________________________
 ///*Question 6 lab03 16 mars//
 
-
+function guess(){
 let inputnum= prompt('Now could you Guess haw many flower 🌷 I have own! between 1 and 15, you wil have 4 attempts');
 for (let attempt = 4; attempt > 1; attempt--)
 {
@@ -142,6 +155,9 @@ for (let attempt = 4; attempt > 1; attempt--)
   else alert('you exceeded the allowed number of attempts ');
 }
 alert('actually I have 7 types');
+}
+
+guess();
 
 
 
@@ -173,6 +189,7 @@ while(attempt<=4);
 
 //______________________________________________________________________________________________________________________
 ///*Question 7 lab03 16 mars//
+function favDrink(){
 let mydrink=['coffee','pepsi','nescafi'];
 for(let turns=6; turns>=1, turns--;)
 {
@@ -191,6 +208,9 @@ for(let turns=6; turns>=1, turns--;)
   if ((answer.toLowerCase()!== mydrink[0] || answer.toLowerCase()!== mydrink[1] || answer.toLowerCase()!== mydrink[2] )&& turns<=0)
   {alert('you exceeded the allowed number of attempts ☹️ ');}
 }
+}
+
+favDrink();
 
 
 
