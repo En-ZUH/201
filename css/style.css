@@ -1,9 +1,10 @@
-h1 {color: coral; text-align: center;}
+h1 {color: #f39189; text-align: center;}
 
-.on{ background-color: darkseagreen;}
+.on{ background-color: #bb8082;}
 
-footer{background-color: lightpink;}
 
+body{ background-color: #6e7582;}
+footer{background-color:#046582;}
 /*div.box{
     height: 300px;
     width: 300px;
