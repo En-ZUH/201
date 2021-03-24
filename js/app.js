@@ -179,24 +179,6 @@ if (type.toLocaleLowerCase() === 'yes' || type.toLocaleLowerCase() === 'y')
   favDrink();
 
 
-  let mydrink=['coffee','pepsi','nescafi'];
-  for(let turns=6; turns>=1, turns--;)
-  {
-    let answer= prompt('could you guess my faviourite drink?! Coffee , Pepsi, or Nescafi ?! 🥤☕️');
-
-    if (answer.toLowerCase()=== mydrink[2])
-    {
-      alert('your answer is '+ answer+ '\n'+'Yub, you guessed that, Nescafe is my favourite drink');
-      score++;
-      break;
-    }
-
-    else if(answer.toLowerCase()=== mydrink[0] || answer.toLowerCase()=== mydrink[1])
-    {alert('your answer is '+ answer+'\n'+ 'which is not correct, try again 🤦‍♀️ ');}
-
-    if ((answer.toLowerCase()!== mydrink[0] || answer.toLowerCase()!== mydrink[1] || answer.toLowerCase()!== mydrink[2] )&& turns<=0)
-      alert('you exceeded the allowed number of attempts ☹️ ');
-  }
 
 
 
